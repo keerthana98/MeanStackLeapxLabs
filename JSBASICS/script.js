@@ -18,7 +18,7 @@ var restaurantBill=[124,48,268];
 var tipp=[];
 var totBill=[];
 
-for(i=0;i<3;i++){
+for(i=0;i<restaurantBill.length;i++){
    var v=calcBill(restaurantBill[i]);  
    tipp.push(v);
    totBill[i]=tipp[i]+restaurantBill[i];
