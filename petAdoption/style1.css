@@ -1,0 +1,42 @@
+*
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('dog7.jpg'); /* blur the background image ,twice for left and right,for all 4 sides-mention 4 times(left,right,top,bottom, rgba-a for opaque and transparency*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.nav-menu{
+    float:right;
+    margin:30px;
+    list-style:none; /*none-remove black bullets from unordered list */
+}
+
+.nav-menu li{
+    display: inline-block; /* displays list one after the other in a single line */
+    
+}
+
+.nav-menu li a{
+    color: black;
+    font-size: 30px;
+    padding: 5px 20px; /*top and bottom 5px,right and left 20px*/
+    font-family: Verdana;
+}
+
+.navbtn{
+    border:1px solid grey;
+    background-color: royalblue;
+}
+
+.nav-menu li a:hover{
+    background-color:blueviolet;
+    border:1px solid grey;
+}
+.top{
+    margin-top: 20px;
+}
+.effects{
+    margin-left: 500px;
+    
+}
+

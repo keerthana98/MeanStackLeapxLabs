@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('dog7.jpg'); /* blur the background image ,twice for left and right,for all 4 sides-mention 4 times(left,right,top,bottom, rgba-a for opaque and transparency*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+
+.nav-menu{
+    float:right;
+    margin:30px;
+    list-style:none; /*none-remove black bullets from unordered list */
+}
+
+.nav-menu li{
+    display: inline-block; /* displays list one after the other in a single line */
+    
+}
+
+.nav-menu li a{
+    color: black;
+    font-size: 30px;
+    padding: 5px 20px; /*top and bottom 5px,right and left 20px*/
+    font-family: Verdana;
+}
+
+.navbtn{
+    border:1px solid grey;
+    background-color: royalblue;
+}
+
+.nav-menu li a:hover{
+    background-color:blueviolet;
+    border:1px solid grey;
+}
+
+.tagline{
+    position:absolute;
+    margin-left:0;
+    margin-top:0;
+    width:800px;
+}
+
+h1{
+    color: white;
+    font-size: 35px;
+    font-family: verdana;
+    margin-top:300px;
+    text-align: center;
+}
+
+.adopt{
+    margin-top:30px;
+    margin-left:650px;
+    border:2px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+.adopt:hover{
+    background-color: rgb(185, 108, 108);
+}
+
+.btn{
+    color:yellow;
+    border:2px solid rgb(255, 255, 255);
+    padding: 10px;
+    font-size:25px;
+    text-decoration: none;
+}
+.tagline{
+    position:absolute;
+    margin-left:0;
+    margin-top:0;
+    width:800px;
+}
+
+.btnF{
+    position: fixed;
+}
+
+
+
+
+
+
