@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>ANGULAR REACTIVE FORM VALIDATION</h2>
+<form [formGroup]="angForm">
+  <div class="form-group"><!-- form-group,center-block,form-control is a bootstrap class -->
+    <label class="center-block">NAME:
+      <input class="form-control" formControlName="name"><!--formControlName is to name each form control,like an alias-->
+    </label>
+
+  </div>
+<div *ngIf="angForm.controls['name'].invalid && 
+(angForm.controls['name'].dirty || angForm.controls['name'].touched)"
+class="alert alert-danger">
+
+<div *ngIf="angForm.controls['name'].errors.required">
+  NAME IS REQUIRED.
+</div>
+</div>
+<div class="form-group">
+<button type="submit" [disabled]="angForm.pristine || angForm.invalid"
+class="btn btn-success">SAVE</button>
+<!--disable button when angForm is pristine or invalid-->
+
+</div>
+
+
+
+</form>
+<p>Form value: {{angForm.value | json}} </p>
+<p>Form.status: {{angForm.status | json}}</p>
+</div>
